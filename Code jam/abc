@@ -1,0 +1,16 @@
+
+
+
+tc = int(input())
+for t in range(tc):
+    n = int(input())
+    pattern = []
+    result = None
+    for i in range(n):
+        pattern.append(input())
+        if result is None:
+            result = pattern[-1]
+        else:
+            i = j = 0
+            while i < len(result) and j < len(pattern[-1]):
+                if i > 0 and result[i]
